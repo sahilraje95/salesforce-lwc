@@ -1,0 +1,29 @@
+.list-first {
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+
+.list-last {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.list-first,
+.list-last {
+    width: 70%;
+}
+
+.headerTitle {
+    padding-bottom: 5px;
+}
+
+.countBadge {
+    margin-left: 10px;    
+}
+
+.recordName {
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
