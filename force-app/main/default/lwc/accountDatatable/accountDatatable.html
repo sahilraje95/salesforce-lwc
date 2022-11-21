@@ -1,0 +1,12 @@
+<template>
+    <h1 class="headerTitle">{headerTitle}
+        <lightning-badge label={accountsList.length} class="countBadge" style={badgeStyle}></lightning-badge>
+    </h1>
+    <lightning-datatable
+                key-field="Id"
+                data={accountsList}
+                columns={columns}
+                onrowselection={getSelectedAccount}>
+        </lightning-datatable>
+        <lightning-button variant="brand" label="Increase Revenue" title="Increase Revenue" onclick={updateAccountAnnualRevenue} class="slds-m-top_small"></lightning-button>
+</template>

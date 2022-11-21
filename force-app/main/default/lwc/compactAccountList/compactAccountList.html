@@ -1,0 +1,12 @@
+<template>
+    <h1 class="headerTitle">{headerTitle}
+        <lightning-badge label={recordsList.length} class="countBadge" style={badgeStyle}></lightning-badge>
+    </h1>
+    <template iterator:it={recordsList}>
+        <div key={it.value.Id}>
+            <div if:true={it.first} class="list-first"></div>
+            <p class="recordName">{it.value.Name}</p>
+            <div if:true={it.last} class="list-last"></div>
+        </div>
+    </template>
+</template>
